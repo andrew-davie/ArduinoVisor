@@ -6185,14 +6185,15 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <label x="162.56" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="IRL540N" gate="G$1" pin="G"/>
+<wire x1="88.89743125" y1="-15.224190625" x2="68.58" y2="-15.24" width="0.1524" layer="91"/>
+<label x="68.58" y="-15.24" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="-15.24" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-15.24" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
-<label x="73.66" y="-15.24" size="1.778" layer="95"/>
 <junction x="78.74" y="-15.24"/>
-<pinref part="IRL540N" gate="G$1" pin="G"/>
-<wire x1="78.74" y1="-15.24" x2="78.74" y2="-15.224190625" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="-15.224190625" x2="88.89743125" y2="-15.224190625" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-15.24" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPK2" class="0">
@@ -6372,15 +6373,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <errors>
 <approved hash="113,1,235.292,87.04,POWER,,,,,"/>
 <approved hash="113,1,194.467,22.2,SPEAKER,,,,,"/>
-<approved hash="113,1,127.787,22.6,IR,,,,,"/>
-<approved hash="113,1,122.928,-3.7307,SYNC,,,,,"/>
 <approved hash="113,1,-25.0893,21.02,MOTOR,,,,,"/>
-<approved hash="113,1,66.8779,20.7474,LED,,,,,"/>
-<approved hash="113,1,2.77707,58.6461,LCD,,,,,"/>
-<approved hash="113,1,193.402,58.6461,MICRO_SD,,,,,"/>
 <approved hash="113,2,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,2,50.5629,107.724,JP1,,,,,"/>
-<approved hash="113,2,178.245,112.611,X1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
