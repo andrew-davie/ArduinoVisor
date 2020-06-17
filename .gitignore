@@ -1,5 +1,5 @@
-eagle/televisor/*.b##
-eagle/televisor/*.s##
+eagle/televisor/*.b#*
+eagle/televisor/*.s#*
 .vscode
 .pio
 
