@@ -5983,8 +5983,9 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="-33.02" x2="78.74" y2="-43.18" width="0.1524" layer="91"/>
 <label x="78.74" y="-43.18" size="1.778" layer="95"/>
+<wire x1="78.74" y1="-35.56" x2="78.74" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-33.02" x2="78.74" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SOUND" class="0">
@@ -6188,6 +6189,12 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="88.89743125" y1="-15.224190625" x2="68.58" y2="-15.24" width="0.1524" layer="91"/>
 <label x="68.58" y="-15.24" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="78.74" y1="-15.24" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="78.74" y="-15.24"/>
+<wire x1="76.2" y1="-15.24" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SPK2" class="0">
 <segment>
@@ -6287,13 +6294,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="MICRO_SD" gate="A" pin="1"/>
 <wire x1="190.5" y1="63.5" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <label x="175.26" y="63.5" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="78.74" y1="-15.24" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="78.74" y="-15.24"/>
 </segment>
 </net>
 </nets>

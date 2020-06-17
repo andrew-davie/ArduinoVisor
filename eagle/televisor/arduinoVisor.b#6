@@ -3087,7 +3087,7 @@ design rules under a new name.</description>
 <contactref element="R6" pad="2"/>
 <contactref element="IRL540N" pad="G"/>
 <wire x1="68.58" y1="12.7" x2="68.58" y2="15.875" width="1.905" layer="16"/>
-<wire x1="68.58" y1="15.875" x2="68.58" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="68.58" y1="21.59" x2="68.58" y2="15.875" width="1.905" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="LCD" pad="2"/>

@@ -3042,7 +3042,6 @@ design rules under a new name.</description>
 <contactref element="MICRO_SD" pad="2"/>
 <contactref element="R2" pad="1"/>
 <wire x1="33.02" y1="31.75" x2="33.02" y2="40.64" width="1.9304" layer="1"/>
-<wire x1="47.277046875" y1="29.21" x2="47.3075" y2="29.240453125" width="1.9304" layer="1"/>
 <wire x1="47.3075" y1="29.240453125" x2="34.259546875" y2="29.240453125" width="1.9304" layer="1"/>
 <wire x1="34.259546875" y1="29.240453125" x2="33.02" y2="30.48" width="1.9304" layer="1"/>
 <wire x1="33.02" y1="30.48" x2="33.02" y2="31.75" width="1.9304" layer="1"/>

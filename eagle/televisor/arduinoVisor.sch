@@ -6372,15 +6372,8 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <errors>
 <approved hash="113,1,235.292,87.04,POWER,,,,,"/>
 <approved hash="113,1,194.467,22.2,SPEAKER,,,,,"/>
-<approved hash="113,1,127.787,22.6,IR,,,,,"/>
-<approved hash="113,1,122.928,-3.7307,SYNC,,,,,"/>
 <approved hash="113,1,-25.0893,21.02,MOTOR,,,,,"/>
-<approved hash="113,1,66.8779,20.7474,LED,,,,,"/>
-<approved hash="113,1,2.77707,58.6461,LCD,,,,,"/>
-<approved hash="113,1,193.402,58.6461,MICRO_SD,,,,,"/>
 <approved hash="113,2,130.071,89.431,FRAME1,,,,,"/>
-<approved hash="113,2,50.5629,107.724,JP1,,,,,"/>
-<approved hash="113,2,178.245,112.611,X1,,,,,"/>
 </errors>
 </schematic>
 </drawing>

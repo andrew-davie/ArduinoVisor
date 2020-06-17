@@ -6193,7 +6193,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="78.74" y1="-15.24" x2="78.74" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="78.74" y="-15.24"/>
-<wire x1="76.2" y1="-15.24" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="-17.78" x2="78.74" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPK2" class="0">

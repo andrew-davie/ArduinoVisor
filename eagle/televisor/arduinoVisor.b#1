@@ -2971,7 +2971,6 @@ design rules under a new name.</description>
 <contactref element="R3" pad="2"/>
 <contactref element="PCB2" pad="+5V"/>
 <contactref element="LCD" pad="1"/>
-<wire x1="39.37" y1="31.75" x2="39.3766625" y2="31.7566625" width="1.9304" layer="16"/>
 <wire x1="36.195" y1="31.75" x2="39.37" y2="31.75" width="1.9304" layer="1"/>
 <wire x1="62.5475" y1="36.860453125" x2="55.214546875" y2="36.860453125" width="1.9304" layer="1"/>
 <wire x1="55.214546875" y1="36.860453125" x2="50.8" y2="40.005" width="1.9304" layer="1"/>

@@ -3083,11 +3083,12 @@ design rules under a new name.</description>
 <signal name="LEDS">
 <contactref element="PCB2" pad="D13"/>
 <wire x1="62.5475" y1="8.920453125" x2="64.800453125" y2="8.920453125" width="1.9304" layer="16"/>
-<wire x1="64.800453125" y1="8.920453125" x2="68.58" y2="12.7" width="1.9304" layer="16"/>
+<wire x1="64.800453125" y1="8.920453125" x2="66.9925" y2="11.1125" width="1.9304" layer="16"/>
 <contactref element="R6" pad="2"/>
 <contactref element="IRL540N" pad="G"/>
-<wire x1="68.58" y1="12.7" x2="68.58" y2="15.875" width="1.905" layer="16"/>
-<wire x1="68.58" y1="21.59" x2="68.58" y2="15.875" width="1.905" layer="16"/>
+<wire x1="66.9925" y1="11.1125" x2="68.58" y2="12.7" width="1.9304" layer="16"/>
+<wire x1="68.58" y1="15.875" x2="68.58" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="66.9925" y1="11.1125" x2="68.58" y2="15.875" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="GND">
 <contactref element="LCD" pad="2"/>
@@ -3139,7 +3140,6 @@ design rules under a new name.</description>
 <wire x1="21.59" y1="11.43" x2="21.59" y2="36.559096875" width="1.9304" layer="16"/>
 <wire x1="21.59" y1="36.559096875" x2="21.28864375" y2="36.860453125" width="1.9304" layer="16"/>
 <wire x1="22.86" y1="37.001215625" x2="22.86" y2="40.64" width="1.9304" layer="16"/>
-<wire x1="23.031215625" y1="36.83" x2="23.0007625" y2="36.860453125" width="1.9304" layer="16"/>
 <wire x1="40.177796875" y1="36.83" x2="40.20825" y2="36.860453125" width="1.9304" layer="16"/>
 <wire x1="39.37" y1="6.985" x2="39.37" y2="10.16" width="1.9304" layer="16"/>
 <wire x1="39.37" y1="10.16" x2="38.1" y2="11.43" width="1.9304" layer="16"/>
@@ -3159,7 +3159,6 @@ design rules under a new name.</description>
 <wire x1="26.687534375" y1="36.860453125" x2="39.27999375" y2="36.860453125" width="1.9304" layer="16"/>
 <wire x1="24.81411875" y1="36.860453125" x2="23.0007625" y2="36.860453125" width="1.9304" layer="16"/>
 <wire x1="23.0007625" y1="36.860453125" x2="22.86" y2="37.001215625" width="1.9304" layer="16"/>
-<wire x1="24.765" y1="36.811334375" x2="24.81411875" y2="36.860453125" width="1.9304" layer="16"/>
 <polygon width="0.254" layer="16">
 <vertex x="0" y="60.96"/>
 <vertex x="98.0694" y="60.96"/>
