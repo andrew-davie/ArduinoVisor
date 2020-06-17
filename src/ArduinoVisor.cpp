@@ -33,7 +33,7 @@ bool debug = false;
 bool nextion  = false;    // assume no nextion connected until found
 bool forceTimePreventSeeker;
 
-uint8_t uiMode = MODE_TITLE_INIT;     // program state
+uint8_t uiMode; // = MODE_TITLE_INIT;     // program state
 uint8_t selection = 0;       // selected track # from menu
 uint8_t baseVal;
 uint32_t lastSeekPosition;
@@ -493,10 +493,14 @@ void refresh(int base, int i) {
 #define REFRESH_BOTTOM_LINE 7
 #define REFRESH_ALL_LINES 9
 void writeMenuStrings(uint8_t base, uint8_t updateReq) {
-    if (debug) {
-      Serial.print(F("Base="));    Serial.print(base);
-      Serial.print(F("   uReq=")); Serial.println(updateReq);
-    }
+
+    // if (debug) {
+    //   Serial.print(F("Base="));
+    //   Serial.print(base);
+    //   Serial.print(F("   uReq="));
+    //   Serial.println(updateReq);
+    // }
+
     switch (updateReq){
     case REFRESH_TOP_LINE:
     case REFRESH_BOTTOM_LINE:
@@ -540,9 +544,20 @@ void commenceSelectedTrack(bool firstTime = true) {
     strcpy(nx2, "stn.txt=\"");
     char *nx = nx2 + 9;
 
+    if (debug) {
+        Serial.print(F("Start "));
+        Serial.print(selection);
+    }
+      
+
+
     // Restart from the beginning once the no-nextion version runs out of tracks to play
-    if (!nextion && !getFileN(selection, sizeof( nx ), nx, true, false))
+    if (!nextion && !getFileN(selection, sizeof( nx2 ) - 9, nx, true, false)) {
+        if (debug) {
+            Serial.println(F("zap!"));
+        }
         selection = 0;
+    }
 
     if (getFileN(selection, sizeof( nx2 ) - 9, nx, true, false)) {
 
@@ -573,20 +588,19 @@ void commenceSelectedTrack(bool firstTime = true) {
             nl_SendCommand2(nx2);                                        // --> stn.txt="track name"
         }
 
+        playbackAbsolute = 0;                                                                         //?  TODO: probably removed -was just there to test/fix standalone playback
+        customBrightness = 0;
+        customContrast2 = 0x100;
+        customGamma = true;
+
+        fixVideoTable();
+        fixAudioTable(128);
+
+
+        uiMode = MODE_PLAY;
+        playing = true;            
+
         if (firstTime) {
-
-            playbackAbsolute = 0;                                                                         //?  TODO: probably removed -was just there to test/fix standalone playback
-            customBrightness = 0;
-            customContrast2 = 0x100;
-            customGamma = true;
-
-            fixVideoTable();
-            fixAudioTable(128);
-
-
-            uiMode = MODE_PLAY;
-            playing = true;            
-
             if (nextion) {
                 nl_SetPage(PAGE_PLAY);
                 prepareControlPage();
@@ -705,7 +719,7 @@ void setup() {
         debug = true;
     }
 
-    debug = true;                         //tmp
+    //debug = true;                         //tmp
 
 
     // Setup access to the SD card
@@ -716,8 +730,16 @@ void setup() {
 
     nextion = nl_Init(&nl_Callback);    // find out if nextion connected and setup call back for touch events
 
-    if (nextion && debug)
-        Serial.println("connected");
+    uiMode = nextion ? MODE_TITLE_INIT : MODE_INIT;
+
+
+    if (debug) {
+        if (!nextion)
+            Serial.print(F("NO "));
+        Serial.println(F("display!"));
+    }
+        
+    
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -989,6 +1011,9 @@ void handleEndOfVideo(int nextMode) {
 
     if (playbackAbsolute >= videoLength) {                                // Check for end of movie
 
+        if (debug) {
+            Serial.print(F("end track"));
+        }
 
         if (!nextion)
             selection++;                                         // if there's no nextion/UI, cycle to next track
@@ -996,6 +1021,9 @@ void handleEndOfVideo(int nextMode) {
         stopButtonCallback();                                   // stop everyting (same as 'pressing' stop button)
 
         if (!nextion || customRepeat) {                           // BUT we might have the repeat button ON
+            if (debug) {
+                Serial.print(F("repeating"));
+            }
             commenceSelectedTrack(false);                          // in which case we restart the track (NOT first time)
             uiMode = nextMode;                                     // and drop back into the previous UI mode
         }
@@ -1006,10 +1034,11 @@ void handleEndOfVideo(int nextMode) {
 
 void loop() {
 
-    nl_Listen(); // read nextion!
+    if (nextion)
+        nl_Listen(); // read nextion!
 
     if (playing){
-      
+
         #ifdef DEBUG_ROUNDRROBIN
           digitalWrite(DEBUG_PIN, HIGH);          // round robin speed
         #endif  
@@ -1032,7 +1061,7 @@ void loop() {
               #endif
               
               drawTime("timePos", playbackAbsolute / oneSecond);
-          
+
               if (!forceTimePreventSeeker) {
           
                   // Adjust the seekbar position to the current playback position
@@ -1048,22 +1077,27 @@ void loop() {
           
               forceTimePreventSeeker = false;
           }
-       }        
+       }
+
        handleEndOfVideo(MODE_PLAY);        
         
     }else
-      switch (uiMode) {
+
+    switch (uiMode) {
+
         case MODE_TITLE_INIT:
             if (nextion) {
-              nl_SendCommand2("bkcmd=2");  // TODO: not needed?
-              nl_SendCommand2("page 0");
-              uiMode = MODE_TITLE;
+                nl_SendCommand2("bkcmd=2");  // TODO: not needed?
+                nl_SendCommand2("page 0");
             }
+            uiMode = MODE_TITLE;
             break;
+
         case MODE_INIT:
             setupIRComparator();                          // enables the comparator
             uiMode = MODE_SELECT_TRACK;
             break;
+
         case MODE_SELECT_TRACK:                               // file selection from menu
             if (!nextion) {
                 selection = 0;
@@ -1071,7 +1105,7 @@ void loop() {
                 customRepeat = true;                                                                         // in this case, play all tracks and repeat
             }
             break;
-      }
+    }
 }
 
 // EOF

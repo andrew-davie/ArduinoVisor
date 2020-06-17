@@ -2,7 +2,7 @@
 #define _TELEVISOR_
  
 // *************************** Optimisation and Debug *************************************************************************
-#define  STUFFROMLOOP               // Stuff the buffer from main loop and not the interrupt
+//#define  STUFFROMLOOP               // Stuff the buffer from main loop and not the interrupt
 //#define  DEBUG_PLAYISR            // See how long the play isr takes, cannot use this at 44k
 //#define  DEBUG_PIISR              // See how long the PI isr takes
 //#define  DEBUG_ROUNDRROBIN        // See how fast the round robin is and how long the stuffer takes
