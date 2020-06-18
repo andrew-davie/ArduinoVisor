@@ -5764,7 +5764,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="MOTOR" library="con-wago-508" deviceset="W237-02P" device=""/>
 <part name="LED" library="con-wago-508" deviceset="W237-02P" device=""/>
 <part name="LCD" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="R4" library="rcl" deviceset="R-US_" device="0207/10" value="1K5"/>
 <part name="PCB2" library="E14_Arduino_revC 2 boo" deviceset="ARDUINO_MICRO" device=""/>
 <part name="IRL540N" library="transistor-power" deviceset="IRF540" device="" value="IRL540"/>
 <part name="12V" library="diy-modules boo" deviceset="DC-DC-STEP-DOWN-LM2596" device="" value="12V"/>
@@ -5776,6 +5775,7 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <part name="X1" library="microbuilder" deviceset="TERMBLOCK_1X2" device=""/>
 <part name="R6" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="0207/10" value="10K"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="0207/10" value="1K5"/>
 </parts>
 <sheets>
 <sheet>
@@ -5854,10 +5854,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <attribute name="NAME" x="-1.27" y="64.135" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-1.27" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="136.824146875" y="-3.743184375" smashed="yes">
-<attribute name="NAME" x="133.014146875" y="-2.244584375" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.014146875" y="-7.045184375" size="1.778" layer="96"/>
-</instance>
 <instance part="PCB2" gate="G$1" x="127" y="127" smashed="yes" rot="R90"/>
 <instance part="IRL540N" gate="G$1" x="91.43743125" y="-12.684190625" smashed="yes">
 <attribute name="NAME" x="99.05743125" y="-10.144190625" size="1.778" layer="95"/>
@@ -5887,6 +5883,10 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <attribute name="NAME" x="161.0614" y="69.85" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="165.862" y="69.85" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="R7" gate="G$1" x="141.904146875" y="-11.363184375" smashed="yes">
+<attribute name="NAME" x="138.094146875" y="-9.864584375" size="1.778" layer="95"/>
+<attribute name="VALUE" x="138.094146875" y="-14.665184375" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5902,11 +5902,6 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="194.58" y1="-11.66" x2="194.54" y2="-18.04" width="0.1524" layer="91"/>
 <label x="195.58" y="-17.78" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SYNC" gate="-2" pin="KL"/>
-<wire x1="129.904146875" y1="-9.810703125" x2="148.22059375" y2="-9.768" width="0.1524" layer="91"/>
-<label x="142.916021875" y="-9.203140625" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IRL540" gate="G$1" pin="S"/>
@@ -5987,6 +5982,13 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <wire x1="78.74" y1="-35.56" x2="78.74" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="-33.02" x2="78.74" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SYNC" gate="-1" pin="KL"/>
+<wire x1="128.904146875" y1="-3.730703125" x2="128.944146875" y2="-3.770703125" width="0.1524" layer="91"/>
+<wire x1="128.904146875" y1="-3.730703125" x2="142.24" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="128.904146875" y="-3.730703125"/>
+<label x="142.24" y="0" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="SOUND" class="0">
 <segment>
@@ -6013,26 +6015,20 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 </net>
 <net name="IR_IN" class="0">
 <segment>
-<pinref part="SYNC" gate="-1" pin="KL"/>
-<wire x1="128.904146875" y1="-3.730703125" x2="128.944146875" y2="-3.770703125" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="128.904146875" y1="-3.730703125" x2="131.744146875" y2="-3.743184375" width="0.1524" layer="91"/>
-<junction x="128.904146875" y="-3.730703125"/>
-<wire x1="128.904146875" y1="-3.730703125" x2="128.9209875" y2="4.014590625" width="0.1524" layer="91"/>
-<label x="128.13094375" y="-1.182121875" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="PCB2" gate="G$1" pin="D7"/>
 <wire x1="111.76" y1="121.92" x2="91.44" y2="121.92" width="0.1524" layer="91"/>
 <label x="91.44" y="121.92" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="SYNC" gate="-2" pin="KL"/>
+<wire x1="136.824146875" y1="-11.363184375" x2="129.904146875" y2="-9.810703125" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-17.78" x2="129.904146875" y2="-9.810703125" width="0.1524" layer="91"/>
+<junction x="129.904146875" y="-9.810703125"/>
+<label x="132.08" y="-20.32" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="+5V" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="141.904146875" y1="-3.743184375" x2="151.94508125" y2="-3.78048125" width="0.1524" layer="91"/>
-<label x="151.719353125" y="-1.521040625" size="1.778" layer="95" rot="R180"/>
-</segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="17.78" x2="160.02" y2="17.78" width="0.1524" layer="91"/>
@@ -6047,6 +6043,11 @@ Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailt
 <pinref part="LCD" gate="A" pin="1"/>
 <wire x1="2.54" y1="60.96" x2="-17.814209375" y2="60.85823125" width="0.1524" layer="91"/>
 <label x="-17.814209375" y="60.85823125" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="146.984146875" y1="-11.363184375" x2="152.4" y2="-10.16" width="0.1524" layer="91"/>
+<label x="154.94" y="-12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="IR_OUT" class="0">

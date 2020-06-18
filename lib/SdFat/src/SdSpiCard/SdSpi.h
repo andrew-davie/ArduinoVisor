@@ -352,7 +352,7 @@ inline void SdSpi::beginTransaction(uint8_t divisor) {
   // See AVR processor documentation.
   for (; divisor > b && r < 7; b <<= 1, r += r < 5 ? 1 : 2) {}
   SPCR = (1 << SPE) | (1 << MSTR) | (r >> 1);
-  SPSR = r & 1 ? 0 : 1 << SPI2X;
+  SPSR = (r & 1) ? 0 : 1 << SPI2X;
 }
 //------------------------------------------------------------------------------
 inline void SdSpi::endTransaction() {

@@ -3,3 +3,8 @@ eagle/televisor/*.s#*
 .vscode
 .pio
 
+uncrustify.cfg
+eagle/televisor/arduinoVisor_snap.scr
+eagle/televisor/eagle.epf
+include/televisor.h.unc-backup.md5~
+include/televisor.h.unc-backup~
