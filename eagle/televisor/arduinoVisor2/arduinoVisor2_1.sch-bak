@@ -1,0 +1,656 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 15156 10606
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4400 4400 3599 4400
+Text GLabel 3599 4400 0    70   BiDi ~ 0
+GND
+Text GLabel 3800 4400 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	11960 7159 11959 7410
+Text GLabel 11959 7410 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	5001 7600 5024 7577
+Wire Wire Line
+	5024 7577 5024 7388
+Text GLabel 5024 7483 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	4412 7900 4411 7901
+Wire Wire Line
+	4411 7901 4411 8072
+Text GLabel 4411 7986 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	9477 5811 10397 5812
+Text GLabel 10397 5812 2    70   BiDi ~ 0
+GND
+Text GLabel 9937 5811 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	8700 1300 7900 1300
+Text GLabel 7900 1300 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	10000 1100 10700 1100
+Text GLabel 10700 1100 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	7999 7399 8000 8100
+Text GLabel 8000 8100 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	5200 9600 4600 9600
+Text GLabel 4600 9600 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	6600 9600 7300 9600
+Text GLabel 7300 9600 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	1500 9500 700  9500
+Text GLabel 700  9500 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2900 9500 3600 9500
+Text GLabel 3600 9500 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	11800 4700 11100 4700
+Text GLabel 11200 4700 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	13848 3274 14139 3274
+Text GLabel 13993 3274 2    70   BiDi ~ 0
+GND
+Text GLabel 7400 8400 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	9374 6846 9376 6848
+Wire Wire Line
+	9374 6846 9900 6800
+Connection ~ 9374 6846
+Text GLabel 9900 6800 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	12633 6645 13062 6645
+Text Label 12847 6645 0    70   ~ 0
+SOUND
+Wire Wire Line
+	8700 1800 7900 1800
+Text Label 7900 1800 0    70   ~ 0
+SOUND
+Wire Wire Line
+	12233 6645 11960 6645
+Wire Wire Line
+	11960 6645 11409 6645
+Wire Wire Line
+	11960 6859 11960 6645
+Connection ~ 11960 6645
+Text GLabel 11409 6645 2    70   BiDi ~ 0
+SPK
+Wire Wire Line
+	8700 1900 7900 1900
+Text Label 7900 1900 0    70   ~ 0
+IR_IN
+Wire Wire Line
+	9686 7147 9414 7086
+Wire Wire Line
+	9400 7400 9414 7086
+Connection ~ 9414 7086
+Text Label 9686 7147 0    70   ~ 0
+IR_IN
+Wire Wire Line
+	10000 6000 10600 6000
+Text Label 10600 6000 0    70   ~ 0
++5V
+Wire Wire Line
+	10000 1300 10700 1300
+Text Label 10700 1300 0    70   ~ 0
++5V
+Wire Wire Line
+	4400 4300 3599 4305
+Text Label 3599 4305 2    70   ~ 0
++5V
+Wire Wire Line
+	10086 7147 10300 7100
+Text Label 10300 7100 0    70   ~ 0
++5V
+Wire Wire Line
+	9100 6000 9600 6000
+Wire Wire Line
+	4824 7288 4806 7306
+Wire Wire Line
+	4806 7306 4412 7306
+Wire Wire Line
+	4412 7306 4019 7306
+Wire Wire Line
+	4412 7500 4412 7306
+Connection ~ 4412 7306
+Text Label 4019 7306 2    70   ~ 0
+MOTOR_PWM
+Wire Wire Line
+	8700 1500 7900 1500
+Text Label 7900 1500 0    70   ~ 0
+MOTOR_PWM
+Wire Wire Line
+	5024 6988 5042 6970
+Wire Wire Line
+	5042 6970 5042 6559
+Text Label 5042 6559 3    70   ~ 0
+MOTOR_NEG
+Wire Wire Line
+	3594 5873 3524 5879
+Wire Wire Line
+	3524 5879 4002 5879
+Text Label 4002 5879 0    70   ~ 0
+MOTOR_NEG
+Text Label 4002 5879 0    70   ~ 0
+MOTOR_NEG
+Wire Wire Line
+	4400 4500 3599 4498
+Text Label 3599 4498 2    70   ~ 0
+TX
+Wire Wire Line
+	8700 1000 7900 1000
+Text Label 7900 1000 0    70   ~ 0
+TX
+Wire Wire Line
+	4400 4600 3602 4598
+Text Label 3602 4598 2    70   ~ 0
+RX
+Wire Wire Line
+	8700 1100 7900 1100
+Text Label 7900 1100 0    70   ~ 0
+RX
+Wire Wire Line
+	8700 1600 7900 1600
+Text Label 7900 1600 0    70   ~ 0
+CS
+Wire Wire Line
+	11800 4300 10700 4300
+Wire Wire Line
+	10700 4300 10200 4300
+Wire Wire Line
+	10700 4000 10700 4300
+Text Label 10200 4300 0    70   ~ 0
+CS
+Connection ~ 10700 4300
+Wire Wire Line
+	8700 800  7900 800 
+Text Label 7900 800  0    70   ~ 0
+MOSI
+Wire Wire Line
+	11800 4400 11100 4400
+Text Label 11200 4400 0    70   ~ 0
+MOSI
+Wire Wire Line
+	10000 900  10700 900 
+Text Label 10700 900  0    70   ~ 0
+MISO
+Wire Wire Line
+	11800 4600 11100 4600
+Text Label 11200 4600 0    70   ~ 0
+MISO
+Wire Wire Line
+	10000 800  10700 800 
+Text Label 10700 800  0    70   ~ 0
+SCK
+Wire Wire Line
+	11800 4500 11100 4500
+Text Label 11200 4500 0    70   ~ 0
+SCK
+Wire Wire Line
+	7126 5884 7698 5880
+Text Label 7412 5882 0    70   ~ 0
+LEDOUT
+Text Label 7126 5884 0    70   ~ 0
+LEDOUT
+Wire Wire Line
+	7999 6999 8000 6985
+Wire Wire Line
+	8000 6985 8000 6400
+Text Label 8000 6693 2    70   ~ 0
+LEDOUT
+Wire Wire Line
+	10000 2400 10700 2400
+Text Label 10700 2400 0    70   ~ 0
+LEDS
+Wire Wire Line
+	7400 7300 7400 7600
+Wire Wire Line
+	7200 7300 7400 7300
+Wire Wire Line
+	7400 7300 7400 7299
+Wire Wire Line
+	7400 7299 7799 7299
+Text Label 7200 7300 0    70   ~ 0
+LEDS
+Connection ~ 7400 7300
+Wire Wire Line
+	12288 5826 12725 5826
+Text GLabel 12506 5826 2    70   BiDi ~ 0
+SPK2
+Wire Wire Line
+	12288 6026 12722 6026
+Text GLabel 12505 6026 2    70   BiDi ~ 0
+SPK1
+Wire Wire Line
+	5200 9200 4600 9200
+Text Label 4600 9200 0    70   ~ 0
+VCC
+Wire Wire Line
+	1500 9100 700  9100
+Text Label 700  9100 0    70   ~ 0
+VCC
+Wire Wire Line
+	13848 3474 14139 3474
+Wire Wire Line
+	14139 3474 14139 3471
+Text Label 13993 3474 0    70   ~ 0
+VCC
+Wire Wire Line
+	6600 9200 7300 9200
+Text Label 7300 9200 0    70   ~ 0
+12VB
+Wire Wire Line
+	3597 6079 3829 6078
+Wire Wire Line
+	3829 6078 4011 6078
+Text Label 4007 6079 0    70   ~ 0
+12VB
+Text Label 3920 6078 0    70   ~ 0
+12VB
+Wire Wire Line
+	7152 6096 7683 6104
+Text Label 7417 6100 0    70   ~ 0
+12VB
+Text Label 7417 6100 0    70   ~ 0
+12VB
+Wire Wire Line
+	2900 9100 3600 9100
+Text GLabel 3600 9100 2    70   BiDi ~ 0
++5V
+Wire Wire Line
+	8700 1700 7900 1700
+Text GLabel 7900 1700 2    70   BiDi ~ 0
+SD
+Wire Wire Line
+	10700 3600 10700 3300
+Text Label 10700 3300 0    70   ~ 0
+3V3
+Wire Wire Line
+	10000 2300 10700 2300
+Text Label 10700 2300 0    70   ~ 0
+3V3
+Wire Wire Line
+	11800 4200 11100 4200
+Text Label 11200 4200 0    70   ~ 0
+3V3
+$Comp
+L arduinoVisor2-eagle-import:W237-02P POWER
+U 1 1 13DBCEA2
+P 13648 3274
+AR Path="/13DBCEA2" Ref="POWER"  Part="1" 
+AR Path="/5EFC9640/13DBCEA2" Ref="POWER1"  Part="1" 
+F 0 "POWER1" H 13598 3309 59  0000 R TNN
+F 1 "W237-02P" H 13648 3374 59  0001 L BNN
+F 2 "arduinoVisor2:W237-132" H 13648 3274 50  0001 C CNN
+F 3 "" H 13648 3274 50  0001 C CNN
+	1    13648 3274
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P POWER
+U 2 1 13DBCEAE
+P 13648 3474
+AR Path="/13DBCEAE" Ref="POWER"  Part="2" 
+AR Path="/5EFC9640/13DBCEAE" Ref="POWER1"  Part="2" 
+F 0 "POWER1" H 13598 3509 59  0000 R TNN
+F 1 "W237-02P" H 13648 3574 59  0000 L BNN
+F 2 "arduinoVisor2:W237-132" H 13648 3474 50  0001 C CNN
+F 3 "" H 13648 3474 50  0001 C CNN
+	2    13648 3474
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:R-US_0207_10 R1
+U 1 1 43F53746
+P 12433 6645
+AR Path="/43F53746" Ref="R1"  Part="1" 
+AR Path="/5EFC9640/43F53746" Ref="R1"  Part="1" 
+F 0 "R1" H 12283 6704 59  0000 L BNN
+F 1 "1K" H 12283 6516 59  0000 L BNN
+F 2 "arduinoVisor2:0207_10" H 12433 6645 50  0001 C CNN
+F 3 "" H 12433 6645 50  0001 C CNN
+	1    12433 6645
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:C2.5_2 C1
+U 1 1 3E09B9D6
+P 11960 6959
+AR Path="/3E09B9D6" Ref="C1"  Part="1" 
+AR Path="/5EFC9640/3E09B9D6" Ref="C1"  Part="1" 
+F 0 "C1" H 12020 6974 59  0000 L BNN
+F 1 "10nF" H 12020 6774 59  0000 L BNN
+F 2 "arduinoVisor2:C2.5-2" H 11960 6959 50  0001 C CNN
+F 3 "" H 11960 6959 50  0001 C CNN
+	1    11960 6959
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P SPEAKER
+U 1 1 16AE7F53
+P 12088 5826
+AR Path="/16AE7F53" Ref="SPEAKER"  Part="1" 
+AR Path="/5EFC9640/16AE7F53" Ref="SPEAKER1"  Part="1" 
+F 0 "SPEAKER1" H 12038 5861 59  0000 R TNN
+F 1 "W237-02P" H 12088 5926 59  0001 L BNN
+F 2 "arduinoVisor2:W237-132" H 12088 5826 50  0001 C CNN
+F 3 "" H 12088 5826 50  0001 C CNN
+	1    12088 5826
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P SPEAKER
+U 2 1 16AE7F5F
+P 12088 6026
+AR Path="/16AE7F5F" Ref="SPEAKER"  Part="2" 
+AR Path="/5EFC9640/16AE7F5F" Ref="SPEAKER1"  Part="2" 
+F 0 "SPEAKER1" H 12038 6061 59  0000 R TNN
+F 1 "W237-02P" H 12088 6126 59  0000 L BNN
+F 2 "arduinoVisor2:W237-132" H 12088 6026 50  0001 C CNN
+F 3 "" H 12088 6026 50  0001 C CNN
+	2    12088 6026
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P IR
+U 1 1 683CAA87
+P 9277 5811
+AR Path="/683CAA87" Ref="IR"  Part="1" 
+AR Path="/5EFC9640/683CAA87" Ref="IR1"  Part="1" 
+F 0 "IR1" H 9227 5846 59  0000 R TNN
+F 1 "W237-02P" H 9277 5911 59  0001 L BNN
+F 2 "arduinoVisor2:W237-132" H 9277 5811 50  0001 C CNN
+F 3 "" H 9277 5811 50  0001 C CNN
+	1    9277 5811
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P IR
+U 2 1 683CAA8B
+P 8900 6000
+AR Path="/683CAA8B" Ref="IR"  Part="2" 
+AR Path="/5EFC9640/683CAA8B" Ref="IR1"  Part="2" 
+F 0 "IR1" H 8850 6035 59  0000 R TNN
+F 1 "W237-02P" H 8900 6100 59  0000 L BNN
+F 2 "arduinoVisor2:W237-132" H 8900 6000 50  0001 C CNN
+F 3 "" H 8900 6000 50  0001 C CNN
+	2    8900 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P SYNC
+U 1 1 DAB6705E
+P 9174 6846
+AR Path="/DAB6705E" Ref="SYNC"  Part="1" 
+AR Path="/5EFC9640/DAB6705E" Ref="SYNC1"  Part="1" 
+F 0 "SYNC1" H 9124 6881 59  0000 R TNN
+F 1 "W237-02P" H 9174 6946 59  0001 L BNN
+F 2 "arduinoVisor2:W237-132" H 9174 6846 50  0001 C CNN
+F 3 "" H 9174 6846 50  0001 C CNN
+	1    9174 6846
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P SYNC
+U 2 1 DAB67052
+P 9214 7086
+AR Path="/DAB67052" Ref="SYNC"  Part="2" 
+AR Path="/5EFC9640/DAB67052" Ref="SYNC1"  Part="2" 
+F 0 "SYNC1" H 9164 7121 59  0000 R TNN
+F 1 "W237-02P" H 9214 7186 59  0000 L BNN
+F 2 "arduinoVisor2:W237-132" H 9214 7086 50  0001 C CNN
+F 3 "" H 9214 7086 50  0001 C CNN
+	2    9214 7086
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:R-US_0207_10 R3
+U 1 1 59087274
+P 9800 6000
+AR Path="/59087274" Ref="R3"  Part="1" 
+AR Path="/5EFC9640/59087274" Ref="R3"  Part="1" 
+F 0 "R3" H 9650 6059 59  0000 L BNN
+F 1 "180" H 9650 5870 59  0000 L BNN
+F 2 "arduinoVisor2:0207_10" H 9800 6000 50  0001 C CNN
+F 3 "" H 9800 6000 50  0001 C CNN
+	1    9800 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:IRF540 IRL540
+U 1 1 AAE0D1DE
+P 4924 7188
+AR Path="/AAE0D1DE" Ref="IRL540"  Part="1" 
+AR Path="/5EFC9640/AAE0D1DE" Ref="IRL540"  Part="1" 
+F 0 "IRL540" H 5224 7288 59  0000 L BNN
+F 1 "IRF540" H 5224 7188 59  0000 L BNN
+F 2 "arduinoVisor2:TO220BV" H 4924 7188 50  0001 C CNN
+F 3 "" H 4924 7188 50  0001 C CNN
+	1    4924 7188
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:R-US_0207_10 R5
+U 1 1 3E38F061
+P 4412 7700
+AR Path="/3E38F061" Ref="R5"  Part="1" 
+AR Path="/5EFC9640/3E38F061" Ref="R5"  Part="1" 
+F 0 "R5" H 4262 7759 59  0000 L BNN
+F 1 "10K" H 4262 7570 59  0000 L BNN
+F 2 "arduinoVisor2:0207_10" H 4412 7700 50  0001 C CNN
+F 3 "" H 4412 7700 50  0001 C CNN
+	1    4412 7700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P MOTOR
+U 1 1 2BFEDBFF
+P 3394 5873
+AR Path="/2BFEDBFF" Ref="MOTOR"  Part="1" 
+AR Path="/5EFC9640/2BFEDBFF" Ref="MOTOR1"  Part="1" 
+F 0 "MOTOR1" H 3344 5908 59  0000 R TNN
+F 1 "W237-02P" H 3394 5973 59  0001 L BNN
+F 2 "arduinoVisor2:W237-132" H 3394 5873 50  0001 C CNN
+F 3 "" H 3394 5873 50  0001 C CNN
+	1    3394 5873
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P MOTOR
+U 2 1 2BFEDBF3
+P 3397 6079
+AR Path="/2BFEDBF3" Ref="MOTOR"  Part="2" 
+AR Path="/5EFC9640/2BFEDBF3" Ref="MOTOR1"  Part="2" 
+F 0 "MOTOR1" H 3347 6114 59  0000 R TNN
+F 1 "W237-02P" H 3397 6179 59  0000 L BNN
+F 2 "arduinoVisor2:W237-132" H 3397 6079 50  0001 C CNN
+F 3 "" H 3397 6079 50  0001 C CNN
+	2    3397 6079
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P LED
+U 1 1 D57E8DFB
+P 6926 5884
+AR Path="/D57E8DFB" Ref="LED"  Part="1" 
+AR Path="/5EFC9640/D57E8DFB" Ref="LED1"  Part="1" 
+F 0 "LED1" H 6876 5919 59  0000 R TNN
+F 1 "W237-02P" H 6926 5984 59  0001 L BNN
+F 2 "arduinoVisor2:W237-132" H 6926 5884 50  0001 C CNN
+F 3 "" H 6926 5884 50  0001 C CNN
+	1    6926 5884
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:W237-02P LED
+U 2 1 D57E8DF7
+P 6952 6096
+AR Path="/D57E8DF7" Ref="LED"  Part="2" 
+AR Path="/5EFC9640/D57E8DF7" Ref="LED1"  Part="2" 
+F 0 "LED1" H 6902 6131 59  0000 R TNN
+F 1 "W237-02P" H 6952 6196 59  0000 L BNN
+F 2 "arduinoVisor2:W237-132" H 6952 6096 50  0001 C CNN
+F 3 "" H 6952 6096 50  0001 C CNN
+	2    6952 6096
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:PINHD-1X4 LCD
+U 1 1 CBDD677D
+P 4500 4500
+AR Path="/CBDD677D" Ref="LCD"  Part="1" 
+AR Path="/5EFC9640/CBDD677D" Ref="LCD1"  Part="1" 
+F 0 "LCD1" H 4250 4825 59  0000 L BNN
+F 1 "PINHD-1X4" H 4250 4200 59  0000 L BNN
+F 2 "arduinoVisor2:1X04" H 4500 4500 50  0001 C CNN
+F 3 "" H 4500 4500 50  0001 C CNN
+	1    4500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:ARDUINO_MICRO PCB2
+U 1 1 5B1174EF
+P 9300 1700
+AR Path="/5B1174EF" Ref="PCB2"  Part="1" 
+AR Path="/5EFC9640/5B1174EF" Ref="PCB2"  Part="1" 
+F 0 "PCB2" H 9300 1700 50  0001 C CNN
+F 1 "ARDUINO_MICRO" H 9300 1700 50  0001 C CNN
+F 2 "arduinoVisor2:ARDUINO_MICRO" H 9300 1700 50  0001 C CNN
+F 3 "" H 9300 1700 50  0001 C CNN
+	1    9300 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:IRF540 IRL540N
+U 1 1 161FEA76
+P 7899 7199
+AR Path="/161FEA76" Ref="IRL540N"  Part="1" 
+AR Path="/5EFC9640/161FEA76" Ref="IRL540N1"  Part="1" 
+F 0 "IRL540N1" H 8199 7299 59  0000 L BNN
+F 1 "IRL540" H 8199 7199 59  0000 L BNN
+F 2 "arduinoVisor2:TO220BV" H 7899 7199 50  0001 C CNN
+F 3 "" H 7899 7199 50  0001 C CNN
+	1    7899 7199
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:DC-DC-STEP-DOWN-LM2596 12V
+U 1 1 566F9178
+P 5900 9400
+AR Path="/566F9178" Ref="12V"  Part="1" 
+AR Path="/5EFC9640/566F9178" Ref="12V1"  Part="1" 
+F 0 "12V1" H 5400 10000 59  0000 L BNN
+F 1 "12V" H 5400 9900 59  0000 L BNN
+F 2 "arduinoVisor2:DC-DC-STEP-DOWN-LM2596" H 5900 9400 50  0001 C CNN
+F 3 "" H 5900 9400 50  0001 C CNN
+	1    5900 9400
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:DC-DC-STEP-DOWN-LM2596 5V
+U 1 1 600C2563
+P 2200 9300
+AR Path="/600C2563" Ref="5V"  Part="1" 
+AR Path="/5EFC9640/600C2563" Ref="5V1"  Part="1" 
+F 0 "5V1" H 1700 9900 59  0000 L BNN
+F 1 "DC-DC-STEP-DOWN-LM2596" H 1700 9800 59  0000 L BNN
+F 2 "arduinoVisor2:DC-DC-STEP-DOWN-LM2596" H 2200 9300 50  0001 C CNN
+F 3 "" H 2200 9300 50  0001 C CNN
+	1    2200 9300
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:PINHD-1X6 MICRO_SD
+U 1 1 61F74B0F
+P 11900 4500
+AR Path="/61F74B0F" Ref="MICRO_SD"  Part="1" 
+AR Path="/5EFC9640/61F74B0F" Ref="MICRO_SD1"  Part="1" 
+F 0 "MICRO_SD1" H 11650 4925 59  0000 L BNN
+F 1 "PINHD-1X6" H 11650 4100 59  0000 L BNN
+F 2 "arduinoVisor2:1X06" H 11900 4500 50  0001 C CNN
+F 3 "" H 11900 4500 50  0001 C CNN
+	1    11900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:R-US_0207_10 R6
+U 1 1 D281FDEE
+P 7400 7800
+AR Path="/D281FDEE" Ref="R6"  Part="1" 
+AR Path="/5EFC9640/D281FDEE" Ref="R6"  Part="1" 
+F 0 "R6" H 7250 7859 59  0000 L BNN
+F 1 "10K" H 7250 7670 59  0000 L BNN
+F 2 "arduinoVisor2:0207_10" H 7400 7800 50  0001 C CNN
+F 3 "" H 7400 7800 50  0001 C CNN
+	1    7400 7800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:R-US_0207_10 R2
+U 1 1 7D790F78
+P 10700 3800
+AR Path="/7D790F78" Ref="R2"  Part="1" 
+AR Path="/5EFC9640/7D790F78" Ref="R2"  Part="1" 
+F 0 "R2" H 10550 3859 59  0000 L BNN
+F 1 "10K" H 10550 3670 59  0000 L BNN
+F 2 "arduinoVisor2:0207_10" H 10700 3800 50  0001 C CNN
+F 3 "" H 10700 3800 50  0001 C CNN
+	1    10700 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:R-US_0207_10 R4
+U 1 1 9A947C5F
+P 9886 7147
+AR Path="/9A947C5F" Ref="R4"  Part="1" 
+AR Path="/5EFC9640/9A947C5F" Ref="R4"  Part="1" 
+F 0 "R4" H 9736 7206 59  0000 L BNN
+F 1 "1K5" H 9736 7017 59  0000 L BNN
+F 2 "arduinoVisor2:0207_10" H 9886 7147 50  0001 C CNN
+F 3 "" H 9886 7147 50  0001 C CNN
+	1    9886 7147
+	1    0    0    -1  
+$EndComp
+Text Notes 3700 5500 0    59   ~ 0
+MOTOR CONTROL
+Text Notes 6900 5500 0    59   ~ 0
+DISPLAY LEDS
+Text Notes 9200 5500 0    59   ~ 0
+INFRA-RED DETECTORS
+Text Notes 3600 3800 0    59   ~ 0
+NEXTION LCD DISPLAY
+Text Notes 9000 3800 0    59   ~ 0
+SD CARD READER
+Text Notes 11900 5500 0    59   ~ 0
+SOUND
+Wire Wire Line
+	7400 8000 7400 8400
+$EndSCHEMATC

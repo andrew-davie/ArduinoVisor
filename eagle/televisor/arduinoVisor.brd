@@ -2937,8 +2937,8 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="33.02" y="27.94" size="1.4224" layer="21" font="vector" ratio="10" rot="R270" align="center"/>
 </element>
 <element name="R7" library="rcl" package="0207/10" value="1K5" x="39.37" y="26.67" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.751" y="24.257" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="40.005" y="26.3144" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="39.37" y="24.765" size="1.016" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
+<attribute name="VALUE" x="39.37" y="27.94" size="1.4224" layer="21" font="vector" ratio="10" rot="R90" align="center"/>
 </element>
 </elements>
 <signals>

@@ -1,0 +1,96 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 11988 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	7800 2000 7500 2000
+Text GLabel 7500 2000 2    70   BiDi ~ 0
+SPK1
+Wire Wire Line
+	7800 2100 7500 2100
+Text GLabel 7500 2100 2    70   BiDi ~ 0
+SPK2
+Wire Wire Line
+	2900 1900 3700 1900
+Text GLabel 3500 1900 2    70   BiDi ~ 0
+SPK
+Wire Wire Line
+	2900 2000 3700 2000
+Text GLabel 3500 2000 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2900 2300 3700 2300
+Text GLabel 3500 2300 2    70   BiDi ~ 0
+GND
+Wire Wire Line
+	2900 2200 3700 2200
+Text GLabel 3500 2200 2    70   BiDi ~ 0
++5V
+Wire Wire Line
+	2900 2100 3700 2100
+Text GLabel 3500 2100 2    70   BiDi ~ 0
+SD
+$Comp
+L arduinoVisor2-eagle-import:FRAME_A4 #FRAME1
+U 1 1 7D0788B5
+P 900 6400
+AR Path="/7D0788B5" Ref="#FRAME1"  Part="1" 
+AR Path="/5EFC97D6/7D0788B5" Ref="#FRAME1"  Part="1" 
+F 0 "#FRAME1" H 900 6400 50  0001 C CNN
+F 1 "FRAME_A4" H 900 6400 50  0001 C CNN
+F 2 "" H 900 6400 50  0001 C CNN
+F 3 "" H 900 6400 50  0001 C CNN
+	1    900  6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:FRAME_A4 #FRAME1
+U 2 1 7D0788B9
+P 6200 6300
+AR Path="/7D0788B9" Ref="#FRAME1"  Part="2" 
+AR Path="/5EFC97D6/7D0788B9" Ref="#FRAME1"  Part="2" 
+F 0 "#FRAME1" H 6200 6300 50  0001 C CNN
+F 1 "FRAME_A4" H 6200 6300 50  0001 C CNN
+F 2 "" H 6200 6300 50  0001 C CNN
+F 3 "" H 6200 6300 50  0001 C CNN
+	2    6200 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:HEADER-1X570MIL JP1
+U 1 1 A75A2B47
+P 2800 2100
+AR Path="/A75A2B47" Ref="JP1"  Part="1" 
+AR Path="/5EFC97D6/A75A2B47" Ref="JP1"  Part="1" 
+F 0 "JP1" H 2550 2425 59  0000 L BNN
+F 1 "HEADER-1X570MIL" H 2550 1700 59  0000 L BNN
+F 2 "arduinoVisor2:1X05_ROUND_70" H 2800 2100 50  0001 C CNN
+F 3 "" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L arduinoVisor2-eagle-import:TERMBLOCK_1X2 X1
+U 1 1 6F919911
+P 8000 2100
+AR Path="/6F919911" Ref="X1"  Part="1" 
+AR Path="/5EFC97D6/6F919911" Ref="X1"  Part="1" 
+F 0 "X1" H 7900 2400 42  0000 L BNN
+F 1 "TERMBLOCK_1X2" H 7900 1900 42  0000 L BNN
+F 2 "arduinoVisor2:TERMBLOCK_1X2-3.5MM" H 8000 2100 50  0001 C CNN
+F 3 "" H 8000 2100 50  0001 C CNN
+	1    8000 2100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
